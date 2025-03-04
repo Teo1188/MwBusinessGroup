@@ -103,6 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('welcome').textContent = data.welcome;
                 document.getElementById('herosub').textContent = data.herosub;
                 document.getElementById('ver_mas').textContent = data.ver_mas;
+                document.getElementById('ver_mas2').textContent = data.ver_mas2;
+                document.getElementById('ver_mas3').textContent = data.ver_mas3;
+                document.getElementById('ver_mas4').textContent = data.ver_mas4;
                 document.getElementById('acondicionador_agua').textContent = data.acondicionador_agua;
                 document.getElementById('eficiencia_agua').textContent = data.eficiencia_agua;
                 document.getElementById('ahorro_energia').textContent = data.ahorro_energia;
