@@ -111,11 +111,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('ahorro_energia').textContent = data.ahorro_energia;
                 document.getElementById('ahorro_30').textContent = data.ahorro_30;
                 document.getElementById('w_valve').textContent = data.w_valve;
+                document.getElementById('tecnopunt').textContent = data.tecnopunt;
                 document.getElementById('ahorro_factura_agua').textContent = data.ahorro_factura_agua;
                 document.getElementById('nuestras_soluciones').textContent = data.nuestras_soluciones;
                 document.getElementById('monitoreo').textContent = data.monitoreo;
                 document.getElementById('soluciones_monitoreo').textContent = data.soluciones_monitoreo;
                 document.getElementById('ahorro_energia_text').textContent = data.ahorro_energia_text;
+                document.getElementById('ahorro_energia_text2').textContent = data.ahorro_energia_text2;
+                document.getElementById('ahorro_energia_text3').textContent = data.ahorro_energia_text3;
+                document.getElementById('ahorro_energia_text4').textContent = data.ahorro_energia_text4;
                 document.getElementById('aire_acondicionado').textContent = data.aire_acondicionado;
                 document.getElementById('acondicionador_agua_text').textContent = data.acondicionador_agua_text;
                 document.getElementById('agua_avanzado').textContent = data.agua_avanzado;
