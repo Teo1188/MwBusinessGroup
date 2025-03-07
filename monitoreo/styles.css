@@ -1,0 +1,441 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar.scrolled {
+    background-color: #0b4a00;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+}
+
+.navbar .logo img {
+    height: 50px;
+    margin-left: 250px;
+    transition: height 0.3s ease;
+}
+
+/* Menú Hamburguesa */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Enlaces del Navbar */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 350px;
+    margin-top: 30px;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar.scrolled .nav-links a {
+    color: whitesmoke;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #0b4a00, #4CAF50); /* Gradiente de verde oscuro a claro */
+    padding: 50px 20px;
+    min-height: 70vh;
+    width: 100%; /* Asegura que ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Contenedor de la imagen */
+.hero-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image img {
+    margin-top: 160px;
+    margin-bottom: 80px;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra */
+}
+
+.monitoreo {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 50px; /* Espacio para la imagen */
+    padding-top:90px;
+}
+
+.monitoreo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.monitoreo h2 {
+    font-size: 1.8rem;
+    color: #eef7f8; /* Color claro para el subtítulo */
+    margin-bottom: 20px;
+}
+
+.monitoreo p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 10%;
+}
+
+#monitorsubtitulo {
+    margin-bottom: 50px;
+}
+
+#monitortext1 {
+    margin-bottom: 30px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 120px;
+}
+
+h1.solutionstext{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    color:#4CAF50;
+    font-size: 4.5rem;
+    line-height: 4.2rem;
+
+}
+
+/*cards*/
+
+
+.swiper {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    height: 550px;
+    width: 500px;
+}
+
+.swiper-slide {
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    height: 420px;
+    width: 295px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.40;
+}
+
+.swiper-txt {
+    position: absolute;
+    margin-top: 50px;
+    padding: 25px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Ancho fijo */
+}
+
+.swiper-txt .card-logo {
+    width: 80px; /* Ajusta el tamaño del logotipo */
+    height: 80px;
+    margin-bottom: 20px;
+    z-index: 2;
+    
+}
+
+.swiper-txt h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #222222;
+    white-space: nowrap;
+}
+
+.swiper-txt p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.swiper-txt .card-button {
+    padding: 20px 50px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    bottom: -150px; /* Fija el botón en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
+}
+
+.swiper.mySwiper .swiper-button-next,
+.swiper.mySwiper .swiper-button-prev {
+    color: #4CAF50; /* Color de los botones */
+}
+
+.swiper.mySwiper .swiper-pagination-bullet {
+    background: #4CAF50; /* Color de los puntos de paginación */
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    text-align: start;
+    padding: 20px;
+    background-color: #0b4a00;
+    color: white;
+}
+
+.footer .footerinfo {
+    color: white;
+    margin-left: 30px;
+
+}
+
+/**********************************RESPONSIVE****************************************/
+/* Estilos Responsive */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px; /* Reduce aún más el padding en pantallas muy pequeñas */
+    }
+
+    .footer .footerinfo {
+        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas muy pequeñas */
+    }
+
+    .footer p {
+        font-size: 14px; /* Reduce el tamaño de la fuente del texto de copyright */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #0b4a00;
+        padding: 15px 20px; /* Aumentamos el padding para hacer el navbar más alto */
+        height: 90px; /* Altura fija para el navbar en móvil */
+        display: flex;
+        align-items: center; /* Centramos verticalmente los elementos del navbar */
+        justify-content: space-between;
+    }
+
+    .navbar .logo img {
+        height: 40px; /* Reducimos un poco el tamaño del logo si es necesario */
+        margin-left: 0;
+        margin-top: -30px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu-icon {
+        display: flex;
+        position: static;
+        right: 20px; /* Posicionamos el menú hamburguesa a la derecha */
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 80px; /* Alineamos el menú desplegable justo debajo del navbar */
+        left: -100%;
+        flex-direction: column;
+        background-color: #0b4a00;
+        width: 100%;
+        text-align: center;
+        transition: right 0.3s ease;
+        margin-right: 0;
+        margin-top: 0;
+        padding-top: 10px; /* Espacio interno superior */
+        padding-bottom: 10px; /* Espacio interno inferior */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
+        z-index: 999; /* Aseguramos que el menú desplegable esté por encima del hero */
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        width: 100%; /* Asegura que ocupe el 100% del ancho */
+        min-height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .hero-image,
+    .monitoreo {
+        max-width: 100%; /* Asegura que ocupen el 100% del ancho */
+        padding-left: 0;
+        padding-top: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .hero-image img {
+        width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 10px; /* Bordes redondeados más pequeños en móviles */
+    }
+
+    .monitoreo {
+        text-align: center;
+    }
+
+    .monitoreo h1 {
+        font-size: 2rem;
+    }
+
+    .monitoreo h2 {
+        font-size: 1.5rem;
+    }
+
+    .monitoreo p {
+        text-align: center;
+        padding-bottom: 40px;
+        margin-right: 0;
+    }
+
+    /************Body Cards***********/
+
+    .swiper {
+        width: 100% !important;
+    }
+
+    .swiper-slide {
+        width: 90%; /* Reduce el tamaño en pantallas pequeñas */
+    }
+
+
+    .carousel-content {
+        position: absolute;
+        top: 50%;
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+        text-align: center; /* Centra el texto */
+        color: white;
+        width: 80%; /* Ancho fijo para el contenido */
+        max-width: 800px; /* Ancho máximo para evitar que se vea demasiado ancho */
+    }
+    .carousel-content p {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    h1.solutionstext{
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+        margin-top: 120px;
+    }
+
+    .footer {
+        flex-direction: column; /* Cambia la dirección a columna en móviles */
+        text-align: center; /* Centra el texto en móviles */
+        padding: 15px; /* Reduce el padding en móviles */
+    }
+
+    .footer .footerinfo {
+        margin-left: 0; /* Elimina el margen izquierdo en móviles */
+        margin-top: 10px; /* Añade un margen superior para separar los elementos */
+    }
+
+    .footer p {
+        margin-bottom: 10px; /* Añade un margen inferior al texto de copyright */
+    }
+
+}
+
+
+
+@media (max-width:991px) {
+    .left {
+        display:none;
+    }
+    .swiper {
+        padding: 0 70px;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+}
