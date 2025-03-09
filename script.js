@@ -79,55 +79,58 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
-//lenguajes
+//lenguage
+
+// Función para obtener el nombre de la página actual
+function getCurrentPage() {
+    const path = window.location.pathname; // Obtiene la ruta del archivo actual
+
+    // Si la ruta es la raíz (/), devuelve 'index'
+    if (path === '/' || path === '/index.html') {
+        return 'index';
+    }
+
+    // Extrae el nombre del archivo sin la extensión
+    const page = path.split('/').pop().split('.')[0];
+    return page;
+}
+
+
+function changeLanguage(language, page) {
+    fetch(`${language}.json`)
+        .then(response => response.json())
+        .then(data => {
+            const pageData = data[page];
+            for (const key in pageData) {
+                const element = document.getElementById(key);
+                if (element) {
+                    element.textContent = pageData[key];
+                }
+            }
+        })
+        .catch(error => console.error('Error loading language file:', error));
+}
+
+
+// Evento DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function() {
     const espButton = document.getElementById('esp');
     const engButton = document.getElementById('eng');
+    const currentPage = getCurrentPage();
+
+    // Cargar el idioma guardado
+    const savedLanguage = localStorage.getItem('language') || 'es';
+    changeLanguage(savedLanguage, currentPage);
+
 
     espButton.addEventListener('click', function() {
-        changeLanguage('es');
+        changeLanguage('es', currentPage);
+        localStorage.setItem('language', 'es');
     });
 
     engButton.addEventListener('click', function() {
-        changeLanguage('en');
+        changeLanguage('en', currentPage);
+        localStorage.setItem('language', 'en');
     });
 
-    function changeLanguage(language) {
-        fetch(`${language}.json`)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('Inicio').textContent = data.Inicio;
-                document.getElementById('Monitoreo').textContent = data.Monitoreo;
-                document.getElementById('Ahorro').textContent = data.Ahorro;
-                document.getElementById('Eficiencia').textContent = data.Eficiencia;
-                document.getElementById('welcome').textContent = data.welcome;
-                document.getElementById('herosub').textContent = data.herosub;
-                document.getElementById('ver_mas').textContent = data.ver_mas;
-                document.getElementById('ver_mas2').textContent = data.ver_mas2;
-                document.getElementById('ver_mas3').textContent = data.ver_mas3;
-                document.getElementById('ver_mas4').textContent = data.ver_mas4;
-                document.getElementById('acondicionador_agua').textContent = data.acondicionador_agua;
-                document.getElementById('eficiencia_agua').textContent = data.eficiencia_agua;
-                document.getElementById('ahorro_energia').textContent = data.ahorro_energia;
-                document.getElementById('ahorro_30').textContent = data.ahorro_30;
-                document.getElementById('w_valve').textContent = data.w_valve;
-                document.getElementById('tecnopunt').textContent = data.tecnopunt;
-                document.getElementById('ahorro_factura_agua').textContent = data.ahorro_factura_agua;
-                document.getElementById('nuestras_soluciones').textContent = data.nuestras_soluciones;
-                document.getElementById('monitoreo').textContent = data.monitoreo;
-                document.getElementById('soluciones_monitoreo').textContent = data.soluciones_monitoreo;
-                document.getElementById('ahorro_energia_text').textContent = data.ahorro_energia_text;
-                document.getElementById('ahorro_energia_text2').textContent = data.ahorro_energia_text2;
-                document.getElementById('ahorro_energia_text3').textContent = data.ahorro_energia_text3;
-                document.getElementById('ahorro_energia_text4').textContent = data.ahorro_energia_text4;
-                document.getElementById('aire_acondicionado').textContent = data.aire_acondicionado;
-                document.getElementById('acondicionador_agua_text').textContent = data.acondicionador_agua_text;
-                document.getElementById('agua_avanzado').textContent = data.agua_avanzado;
-                document.getElementById('w_valve_text').textContent = data.w_valve_text;
-                document.getElementById('ahorro_eficiencia_agua').textContent = data.ahorro_eficiencia_agua;
-                document.getElementById('optimizacion_aire').textContent = data.optimizacion_aire;
-                document.getElementById('manera_inteligente').textContent = data.manera_inteligente;
-            })
-            .catch(error => console.error('Error loading language file:', error));
-    }
 });

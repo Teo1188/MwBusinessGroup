@@ -1,4 +1,5 @@
 {
+  "index": {
     "Inicio": "Home",
     "Monitoreo": "Monitoring",
     "Ahorro":"Saving energy",
@@ -30,4 +31,18 @@
     "ahorro_eficiencia_agua": "Stop paying for air, water savings and efficiency system",
     "optimizacion_aire": "Air conditioning optimization system that reduces consumption",
     "manera_inteligente": "A smart way to save electricity with your air conditioning"
+  },
+  "monitoreo": {
+    "Inicio": "Home",
+    "Monitoreo": "Monitoring",
+    "Ahorro":"Saving energy",
+    "Eficiencia":"Water efficiency",
+    "monitortitulo":"Tracking and Monitoring Service",
+    "monitorsubtitulo":"Beyond What You See on Your Bills",
+    "monitortext1":"Utility bills are only part of the story. Behind every charge, there are hidden additional costs: leaks, misuse, unexpected downtime, constant repairs, and the complexity of managing everything manually. These factors not only increase your expenses but also affect the efficiency of your operations.",
+    "monitortext2":"With MWBusinessGroup, you can take full control of your utilities. Our tracking and monitoring system provides you with a clear, real-time view of how your resources are being used. We identify critical points where losses occur and provide you with tools to optimize your consumption, reduce unnecessary expenses, and improve your business's productivity. Don’t settle for just paying bills. With MWBusinessGroup, transform the way you manage your utilities, turning efficiency into a tangible advantage for your company.",
+    "nuestras_soluciones": "Our Solutions",
+    "monitoreo":"Monitoring",
+    "soluciones_monitoreo": "Energy monitoring solutions to optimize consumption."
   }
+}

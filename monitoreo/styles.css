@@ -75,8 +75,8 @@ body {
 }
 
 
-/* Hero Section */
-.hero {
+/* Hero monitoreo Section */
+.heromonitoreo {
     display: flex;
     align-items: center;
     background-image: linear-gradient(to bottom, #0b4a00, #4CAF50); /* Gradiente de verde oscuro a claro */
@@ -88,7 +88,7 @@ body {
 }
 
 /* Contenedor de la imagen */
-.hero-image {
+.heromonitor-image {
     flex: 1;
     max-width: 50%;
     display: flex;
@@ -97,7 +97,7 @@ body {
     overflow: hidden;
 }
 
-.hero-image img {
+.heromonitor-image img {
     margin-top: 160px;
     margin-bottom: 80px;
     max-width: 700px;
@@ -334,14 +334,14 @@ h1.solutionstext{
         margin: 15px 0;
     }
     
-    .hero {
+    .heromonitoreo {
         flex-direction: column;
         padding: 30px 20px;
         width: 100%; /* Asegura que ocupe el 100% del ancho */
         min-height: auto; /* Ajusta la altura automáticamente */
     }
 
-    .hero-image,
+    .heromonitoreo-image,
     .monitoreo {
         max-width: 100%; /* Asegura que ocupen el 100% del ancho */
         padding-left: 0;

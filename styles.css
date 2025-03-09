@@ -75,7 +75,7 @@ body {
 }
 
 
-/* Hero y Carrusel */
+/* Hero y Carrusel principal*/
 .hero {
     position: relative;
     height: 100vh;
@@ -94,12 +94,12 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    pointer-events: none; /* Deshabilita la interacción en elementos no activos */
+    pointer-events: none;
 }
 
 .carousel-item.active {
     opacity: 1;
-    pointer-events: auto; /* Habilita la interacción en el elemento activo */
+    pointer-events: auto;
 }
 
 .carousel-item img {
@@ -160,6 +160,75 @@ body {
     right: 10px;
 }
 
+/* Hero monitoreo Section */
+.heromonitoreo {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #0b4a00, #4CAF50); /* Gradiente de verde oscuro a claro */
+    padding: 50px 20px;
+    min-height: 70vh;
+    width: 100%; /* Asegura que ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Contenedor de la imagen */
+.heromonitor-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heromonitor-image img {
+    margin-top: 160px;
+    margin-bottom: 80px;
+    max-width: 700px;
+    height: auto;
+    border-radius: 15px; /* Opcional: bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra */
+}
+
+.monitoreo {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 50px; /* Espacio para la imagen */
+    padding-top:90px;
+}
+
+.monitoreo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.monitoreo h2 {
+    font-size: 1.8rem;
+    color: #eef7f8; /* Color claro para el subtítulo */
+    margin-bottom: 20px;
+}
+
+.monitoreo p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 10%;
+}
+
+#monitorsubtitulo {
+    margin-bottom: 50px;
+}
+
+#monitortext1 {
+    margin-bottom: 30px;
+}
+
+
+/*fin hero monitoreo*/
+
 /* Main Content */
 .main-content {
     display: flex;
@@ -185,6 +254,12 @@ h1.solutionstext{
     margin-top: 40px;
     margin-bottom: 140px;
     display: flex;
+}
+
+.swimonitor {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
 }
 
 .swiper-slide {
@@ -386,9 +461,48 @@ h1.solutionstext{
         margin-bottom: 30px;
     }
 
+    .heromonitoreo {
+        flex-direction: column;
+        padding: 30px 20px;
+        width: 100%; /* Asegura que ocupe el 100% del ancho */
+        min-height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .heromonitor-image,
+    .monitoreo {
+        max-width: 100%; /* Asegura que ocupen el 100% del ancho */
+        padding-left: 0;
+        padding-top: 20px; /* Espacio entre la imagen y el texto */
+    }
+
+    .heromonitor-image img {
+        width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 10px; /* Bordes redondeados más pequeños en móviles */
+    }
+
+    .monitoreo {
+        text-align: center;
+    }
+
+    .monitoreo h1 {
+        font-size: 2rem;
+    }
+
+    .monitoreo h2 {
+        font-size: 1.5rem;
+    }
+
+    .monitoreo p {
+        text-align: center;
+        padding-bottom: 40px;
+        margin-right: 0;
+    }
+
     h1.solutionstext{
         display: flex;
         justify-content: center;
+        text-align: center;
         font-size: 2.5rem;
         line-height: 2.2rem;
         margin-top: 120px;
