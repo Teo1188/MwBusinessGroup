@@ -86,7 +86,7 @@ function getCurrentPage() {
     const path = window.location.pathname; // Obtiene la ruta del archivo actual
 
     // Si la ruta es la raíz (/) o contiene 'index.html', devuelve 'index'
-    if (path === '/' || path.endsWith('index.html') || path === 'MwBusinessGroup/') {
+    if (path === '/' || path.endsWith('index.html') || path.endsWith('/MwBusinessGroup/')) {
         return 'index';
     }
 
