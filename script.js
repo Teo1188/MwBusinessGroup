@@ -85,8 +85,8 @@ const swiper = new Swiper(".mySwiper", {
 function getCurrentPage() {
     const path = window.location.pathname; // Obtiene la ruta del archivo actual
 
-    // Si la ruta es la raíz (/), devuelve 'index'
-    if (path === '/' || path === '/index.html') {
+    // Si la ruta es la raíz (/) o contiene 'index.html', devuelve 'index'
+    if (path === '/' || path.endsWith('index.html')) {
         return 'index';
     }
 
@@ -94,6 +94,7 @@ function getCurrentPage() {
     const page = path.split('/').pop().split('.')[0];
     return page;
 }
+
 
 
 function changeLanguage(language, page) {
