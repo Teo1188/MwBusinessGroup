@@ -239,20 +239,22 @@ body {
 h1.solutionstext{
     display: flex;
     justify-content: center;
-    margin-top: 140px;
+    margin-top: 80px;
     margin-bottom: 100px;
     color:#4CAF50;
     font-size: 4.5rem;
     line-height: 4.2rem;
-
+    
 }
 
 /*cards*/
 
 
 .swiper {
-    margin-top: 40px;
-    margin-bottom: 140px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 100px;
     display: flex;
 }
 
@@ -263,12 +265,13 @@ h1.solutionstext{
 }
 
 .swiper-slide {
+    width: 300px; /* Ajusta el ancho de cada slide */
     margin-bottom: 50px;
     background-color: #ffffff;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     height: 420px;
-    width: 295px;
+    /* width: 295px; */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -296,6 +299,7 @@ h1.solutionstext{
     justify-content: center;
     text-align: center; /* Centra el texto */
     width: 100%; /* Ancho fijo */
+    
 }
 
 .swiper-txt .card-logo {
@@ -317,11 +321,15 @@ h1.solutionstext{
     font-size: 16px;
     color: #555555;
     margin-bottom: 20px;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+    overflow: hidden; /* Evita que el texto se desborde */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es demasiado largo */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .swiper-txt .card-button {
-    padding: 20px 50px;
+    padding: 10px 50px;
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
@@ -340,23 +348,53 @@ h1.solutionstext{
 
 .swiper.mySwiper .swiper-pagination-bullet {
     background: #4CAF50; /* Color de los puntos de paginación */
+    margin-top: 80px;
 }
 
 
 
-/* Footer */
+/* Estilos para el footer */
 .footer {
     display: flex;
-    text-align: start;
-    padding: 20px;
+    justify-content: start; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 30px;
     background-color: #0b4a00;
     color: white;
 }
 
+.footer p {
+    margin-left: 250px; /* Elimina el margen predeterminado del párrafo */
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center; /* Alinea los iconos y el texto verticalmente */
+    margin-left: 20px; /* Espacio entre los elementos de contacto */
+}
+
+.footer-icon {
+    width: 30px; /* Ajusta el tamaño del icono */
+    height: 30px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
 .footer .footerinfo {
     color: white;
-    margin-left: 30px;
+    text-decoration: none;
+}
 
+/* Estilos Responsive para el Footer */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Cambia a disposición vertical en móviles */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+    }
+
+    .footer-contact {
+        margin-left: 0; /* Elimina el margen izquierdo en móviles */
+        margin-top: 10px; /* Espacio entre los elementos de contacto */
+    }
 }
 
 /**********************************RESPONSIVE****************************************/
@@ -508,19 +546,23 @@ h1.solutionstext{
         margin-top: 120px;
     }
 
-    .footer {
-        flex-direction: column; /* Cambia la dirección a columna en móviles */
-        text-align: center; /* Centra el texto en móviles */
-        padding: 15px; /* Reduce el padding en móviles */
-    }
 
-    .footer .footerinfo {
-        margin-left: 0; /* Elimina el margen izquierdo en móviles */
-        margin-top: 10px; /* Añade un margen superior para separar los elementos */
+    .footer {
+        align-items: center;
+        text-align: center;
     }
 
     .footer p {
-        margin-bottom: 10px; /* Añade un margen inferior al texto de copyright */
+        margin: 20px; /* Elimina el margen predeterminado del párrafo */
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 5px;
     }
 }
 
