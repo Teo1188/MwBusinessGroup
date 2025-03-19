@@ -44,5 +44,27 @@
     "nuestras_soluciones": "Nuestras Soluciones",
     "monitoreo": "Monitoreo",
     "soluciones_monitoreo": "Soluciones de monitorización de energía para optimizar el consumo."
+  },
+  "energia": {
+    "Inicio": "Inicio",
+    "Monitoreo": "Monitoreo",
+    "Ahorro":"Ahorro de Energia",
+    "Eficiencia":"eficiencia de Agua",
+    "energiatitulo":"Líderes en Innovación Energética",
+    "energiasubtitulo":"Maximizamos la eficiencia y la autogeneración.",
+    "energiatext1":"En MWBusinessGroup, impulsamos proyectos e iniciativas innovadoras que combinan tecnologías patentadas y probadas para transformar la manera en que se consume y genera energía. Nuestros sistemas integran fuentes de energía renovable, como solar y eólica, con tecnologías de almacenamiento y gestión inteligente, permitiendo una transición hacia un modelo energético más eficiente y autosuficiente.",
+    "energiatext2":"Nuestras soluciones incluyen la hibridación de fuentes de energía, donde combinamos sistemas tradicionales con energías limpias para optimizar el consumo y reducir la dependencia de la red eléctrica convencional. Esto no solo garantiza un suministro estable y confiable, sino que también promueve la autogeneración, reduciendo costos y minimizando el impacto ambiental.",
+    "energiatext3":"Con patentes exclusivas y un enfoque en la innovación, MWBusinessGroup ha desarrollado tecnologías que permiten capturar, almacenar y reutilizar energía de manera inteligente. Estas soluciones están diseñadas para adaptarse a diversos entornos, desde instalaciones industriales hasta comerciales, ofreciendo ahorros energéticos significativos y contribuyendo a la reducción de la huella de carbono.",
+    "nuestras_soluciones": "Nuestras Soluciones",
+    "ahorro_energia_text":"Ahorro de Energia",
+    "aire_acondicionado":"Aire acondicionado, ahorra energia y dinero, libre de emisiones de CO2",
+    "ahorro_energia_text2":"Ahorro de Energia",
+    "ahorro_energia_text3":"Ahorro de Energia",
+    "ahorro_energia_text4":"Ahorro de energia",
+    "aire_acondicionado2": "Aire acondicionado, ahorra energia y dinero, libre de emisiones de CO2",
+    "optimizacion_aire": "Sistema de optimizacion del aire acondicionado que reduce el consumo",
+    "manera_inteligente": "Una manera inteligente de ahorrar electricidad con tu aire acondicionado",
+    "empty1":"Una manera inteligente de ahorrar electricidad con tu aire acondicionado",
+    "empty2":"Una manera inteligente de ahorrar electricidad con tu aire acondicionado"
   }
 }

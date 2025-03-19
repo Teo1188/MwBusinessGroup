@@ -44,5 +44,27 @@
     "nuestras_soluciones": "Our Solutions",
     "monitoreo":"Monitoring",
     "soluciones_monitoreo": "Energy monitoring solutions to optimize consumption."
+  },
+  "energia": {
+    "Inicio": "Home",
+    "Monitoreo": "Monitoring",
+    "Ahorro":"Saving energy",
+    "Eficiencia":"Water efficiency",
+    "energiatitulo":"Leaders in Energy Innovation",
+    "energiasubtitulo":"We maximize efficiency and self-generation.",
+    "energiatext1":"At MWBusinessGroup, we drive innovative projects and initiatives that combine patented and proven technologies to transform the way energy is consumed and generated. Our systems integrate renewable energy sources, such as solar and wind, with storage technologies and smart management, enabling a transition toward a more efficient and self-sufficient energy model.",
+    "energiatext2":"Our solutions include the hybridization of energy sources, where we combine traditional systems with clean energy to optimize consumption and reduce dependence on the conventional power grid. This not only ensures a stable and reliable supply but also promotes self-generation, reducing costs and minimizing environmental impact.",
+    "energiatext3":"With exclusive patents and a focus on innovation, MWBusinessGroup has developed technologies that enable the intelligent capture, storage, and reuse of energy. These solutions are designed to adapt to various environments, from industrial to commercial facilities, delivering significant energy savings and contributing to the reduction of carbon footprints.",
+    "nuestras_soluciones": "Our Solutions",
+    "ahorro_energia_text":"Energy Savings",
+    "aire_acondicionado":"Air conditioning, save energy and money, free of CO2 emissions",
+    "ahorro_energia_text2":"Energy Savings",
+    "ahorro_energia_text3":"Energy Savings",
+    "ahorro_energia_text4":"Energy Savings",
+    "aire_acondicionado2": "Air conditioning, save energy and money, free of CO2 emissions",
+    "optimizacion_aire": "Air conditioning optimization system that reduces consumption",
+    "manera_inteligente": "A smart way to save electricity with your air conditioning",
+    "empty1":"A smart way to save electricity with your air conditioning",
+    "empty2":"A smart way to save electricity with your air conditioning"
   }
 }

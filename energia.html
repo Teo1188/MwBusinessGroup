@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MWBusinessGroup</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
@@ -22,9 +22,9 @@
         </div>
         <!-- Enlaces del Navbar -->
         <ul class="nav-links" id="nav-links">
-            <li><a href="index.html" id="Inicio">Inicio</a></li>
-            <li><a href="./monitoreo.html" id="Monitoreo">Monitoreo</a></li>
-            <li><a href="./energia.html" id="Ahorro">Ahorro de Energia</a></li>
+            <li><a href="./index.html" id="Inicio">Inicio</a></li>
+            <li><a href="monitoreo.html" id="Monitoreo">Monitoreo</a></li>
+            <li><a href="energia.html" id="Ahorro">Ahorro de Energia</a></li>
             <li><a href="#water-efficiency" id="Eficiencia">Eficiencia de Agua</a></li>
             <li><a href="#" id="esp">ESP</a></li>
             <li><a href="#" id="eng">ENG</a></li>
@@ -32,43 +32,29 @@
     </nav>
 
     <!-- Header con Hero y Carrusel -->
-    <header class="hero">
-        <div class="carousel">
-            <div class="carousel-item active">
-                <img src="./image/hero1.jpg" alt="Hero 1">
-                <div class="carousel-content">
-                    <h1 id="welcome">Soluciones Que Ahorran.</h1>
-                    <p class="herosub" id="herosub">Reduce costos sin perder eficiencia</p>
-                    <a href="#soluciones" class="btn" id="ver_mas">Ver más</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./image/hero2.jpg" alt="Hero 2">
-                <div class="carousel-content">
-                    <h1 id="acondicionador_agua">Acondicionador De Agua.</h1>
-                    <p class="herosub" id="eficiencia_agua">Más eficiencia en su ahorro de agua</p>
-                    <a href="./doc/hero/EWE - WATER CONDITIONER.pdf" target="_blank" class="btn" id="ver_mas2">Ver más</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./image/hero3.jpg" alt="Hero 3">
-                <div class="carousel-content">
-                    <h1 id="ahorro_energia">Ahorro del Consumo de Energia.</h1>
-                    <p class="herosub" id="ahorro_30">Ahorra hasta un 30%</p>
-                    <a href="./doc/hero/EWE - EMPORIA.pdf" target="_blank" class="btn" id="ver_mas3">Ver más</a>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./image/hero5.jpg" alt="Hero 4">
-                <div class="carousel-content">
-                    <h1 id="w_valve">W-Valve</h1>
-                    <h1 id="tecnopunt">Tecnología de Punta.</h1>
-                    <p class="herosub" id="ahorro_factura_agua">¡Ahorro en la factura del agua!</p>
-                    <a href="./doc/hero/EWE - W-VALVE.pdf" target="_blank" class="btn" id="ver_mas4">Ver más</a>
-                </div>
-            </div>
-            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+    <header class="heroenergia">
+        <div class="energia">
+            <h1 id="energiatitulo">Líderes en Innovación Energética</h1>
+            <h2 id="energiasubtitulo">Maximizamos la eficiencia y la autogeneración.</h2>
+            <p id="energiatext1">En MWBusinessGroup, impulsamos proyectos e iniciativas innovadoras que combinan tecnologías
+                patentadas y probadas para transformar la manera en que se consume y genera energía. Nuestros sistemas integran
+                fuentes de energía renovable, como solar y eólica, con tecnologías de almacenamiento y gestión inteligente,
+                permitiendo una transición hacia un modelo energético más eficiente y autosuficiente.
+            </p>
+            <p id="energiatext2">
+                Nuestras soluciones incluyen la hibridación de fuentes de energía, donde combinamos sistemas tradicionales con
+                energías limpias para optimizar el consumo y reducir la dependencia de la red eléctrica convencional. Esto no solo
+                garantiza un suministro estable y confiable, sino que también promueve la autogeneración, reduciendo costos y
+                minimizando el impacto ambiental.</p>
+            <p id="energiatext3">
+                Con patentes exclusivas y un enfoque en la innovación, MWBusinessGroup ha desarrollado tecnologías que permiten
+                capturar, almacenar y reutilizar energía de manera inteligente. Estas soluciones están diseñadas para adaptarse a
+                diversos entornos, desde instalaciones industriales hasta comerciales, ofreciendo ahorros energéticos significativos
+                y contribuyendo a la reducción de la huella de carbono.
+            </p>
+        </div>
+        <div class="heroenergia-image">
+            <img src="./image/img1-2.jpg" alt="Imagen descriptiva del servicio">
         </div>
     </header>
 
@@ -77,18 +63,6 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             
-            <div class="swiper-slide">
-                
-                <div class="swiper-txt">
-                    <img src="./image/Monitoreologo.png" alt="Monitoreo" class="card-logo">
-                    <h3 id="monitoreo">Monitoreo</h3>
-                    <p id="soluciones_monitoreo">
-                        Soluciones de monitorización de energía para optimizar el consumo.
-                    </p>
-                    <a href="./doc/Monitoreo/EWE - EMPORIA.pdf" target="_blank" class="card-button"><strong>EMS</strong></a>
-                </div>
-                <img src="./image/img1.jpg" alt="servicio1">
-            </div>
 
             <div class="swiper-slide">
                 <div class="swiper-txt">
@@ -102,17 +76,6 @@
                 <img src="./image/img2.jpg" alt="servicio2">
             </div>
 
-            <div class="swiper-slide">
-                <div class="swiper-txt">
-                    <img src="./image/agualogo.png" alt="Agua" class="card-logo">
-                    <h3 id="acondicionador_agua_text">Acondicionador de Agua</h3>
-                    <p id="agua_avanzado">
-                        Acondicionador de agua avanzado que mejora la eficiencia y economia
-                    </p>
-                    <a href="./doc/Agua/EWE - WATER CONDITIONER.pdf" target="_blank" class="card-button"><strong>Water Conditioner</strong></a>
-                </div>
-                <img src="./image/img3.jpg" alt="servicio3">
-            </div>
 
             <div class="swiper-slide">
                 <div class="swiper-txt">
@@ -124,18 +87,6 @@
                     <a href="./doc/Energia/Aire-Acondicionado/EWE - AIRCOSAVER.pdf" target="_blank" class="card-button"><strong>AIRCOSAVER</strong></a>
                 </div>
                 <img src="./image/img2.jpg" alt="servicio4">
-            </div>
-
-            <div class="swiper-slide">
-                <div class="swiper-txt">
-                    <img src="./image/agualogo.png" alt="Agua" class="card-logo">
-                    <h3 id="w_valve_text">W-Valve</h3>
-                    <p id="ahorro_eficiencia_agua">
-                        Deja de estar pagando por aire, sistema de ahorro y eficiencia del agua
-                    </p>
-                    <a href="./doc/Agua/EWE - W-VALVE.pdf" target="_blank" class="card-button"><strong>W-Valve</strong></a>
-                </div>
-                <img src="./image/img3.jpg" alt="servicio5">
             </div>
 
             <div class="swiper-slide">
@@ -155,6 +106,30 @@
                     <img src="./image/energialogo.png" alt="Energia" class="card-logo">
                     <h3 id="ahorro_energia_text4">Ahorro de energia</h3>
                     <p id="manera_inteligente">
+                        Una manera inteligente de ahorrar electricidad con tu aire acondicionado
+                    </p>
+                    <a href="./doc/Energia/Aire-Acondicionado/EWE - Econ 24.pdf" target="_blank" class="card-button"><strong>ECON 24</strong></a>
+                </div>
+                <img src="./image/img2.jpg" alt="servicio7">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <img src="./image/energialogo.png" alt="Energia" class="card-logo">
+                    <h3 id="ahorro_energia_text4">llenar info</h3>
+                    <p id="empty1">
+                        Una manera inteligente de ahorrar electricidad con tu aire acondicionado
+                    </p>
+                    <a href="./doc/Energia/Aire-Acondicionado/EWE - Econ 24.pdf" target="_blank" class="card-button"><strong>ECON 24</strong></a>
+                </div>
+                <img src="./image/img2.jpg" alt="servicio7">
+            </div>
+
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <img src="./image/energialogo.png" alt="Energia" class="card-logo">
+                    <h3 id="ahorro_energia_text4">llenar info</h3>
+                    <p id="empty2">
                         Una manera inteligente de ahorrar electricidad con tu aire acondicionado
                     </p>
                     <a href="./doc/Energia/Aire-Acondicionado/EWE - Econ 24.pdf" target="_blank" class="card-button"><strong>ECON 24</strong></a>
